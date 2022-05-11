@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    #root{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-image: url('/assets/bg.jpg');
+        background-size: cover;
+
+        .search-box input{
+            width: 100%;
+            height: 50px;
+            border: none;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin: 20px 0px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #00bcd4;
+            outline: none;
+
+            &:focus{
+                background-color: #00bcd4;
+            }
+
+        }
+
+        .weather-box{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px 0px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, .15);  
+            backdrop-filter: blur(5px);
+
+            .weather-box:before {
+                box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+                filter: blur(10px);
+            }
+            .weather-box:after {
+                box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+                filter: blur(10px);
+            }
+            .location{
+                font-size: 20px;
+                font-weight: bold;;
+                margin: 0px 0px 10px 0px;
+            }
+            .date{
+                font-size: 16px;
+                font-weight: bold;
+                margin: 0px 0px 10px 0px;
+            }
+        }
+
+        .weather-temp p{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .weather-icon{
+            width: 150px;
+            height: 150px;
+            margin: 0px 0px 10px 0px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .weather{
+            font-size: 20px;
+            font-weight: bold;;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+}
